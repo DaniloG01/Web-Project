@@ -1,0 +1,316 @@
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  font-family: 'Playfair Display', serif;
+}
+#grid {
+display: grid;
+
+grid-template-rows: auto 1fr;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+
+margin: 0;
+}
+
+#grid > div {
+color: white;
+padding: 10px;
+background-color:rgba(34, 34, 34, 0.753);
+opacity: 75%;
+}
+
+#grid > div:nth-child(1) {
+grid-column: span 3;
+}
+#grid > div:nth-child(2) {
+grid-row: span 4;
+}
+#grid > div:nth-child(4) {
+grid-row: span 4;
+}
+#grid > div:nth-child(5) {
+grid-row: span 2;
+}
+#grid > div:nth-child(6) {
+grid-row: span 1;
+}
+
+nav {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  min-height:120px;
+  }
+  .logo img {
+  width:175px;
+}
+
+.nav-links {
+  display:flex;
+  justify-content:space-around;
+  width:70%;
+}
+
+.nav-links a {
+  color:rgb(226,226,226);
+  font-size: 20px;
+  text-decoration:none;
+  letter-spacing:3px;
+  font-weight:bold;
+  
+}
+
+.nav-links li {
+  list-style:none;
+}
+.nav-links li:hover {
+  transform: scale(1.2); 
+  transition: transform 0.3s ease; 
+}
+.hrstyle{ 
+  display: block; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #987e4d; 
+  border-width: 0 0 1px 0; 
+  
+}
+body {
+  background-image: url('GRID SAJT O COKOLADI/candys/07.12.-Opatija-Festival-čokolade-750x375.jpg');
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5); 
+  background-size:100%;
+  color:white;
+}
+button {
+  background-color: rgba(34, 34, 34, 0.753); 
+  color: black; 
+  border: 1px solid #987e4d;
+  padding:20px 20px;
+  color: #987e4d;
+  border-radius:60px;
+  font-size:15px;
+  text-transform: uppercase;
+  letter-spacing:3px;
+  text-align:center;
+  margin:0 auto;
+  display:block;
+  text-align:center; 
+}
+#button > a {
+  color:inherit;
+  text-decoration:none;
+}
+
+button:hover {
+  border-color: white;
+  color: white;
+  cursor:pointer;
+}
+h1 {
+  text-align:center;
+  margin-bottom: 50px;
+  margin-top:50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font: size 30px;;
+}
+
+
+  
+h1 > span {
+  color:#987e4d;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.vrstecokolada {
+  color:#987e4d;
+  text-align: center;
+  
+}
+h2 > .h2deoboja {
+  color:#987e4d;
+  font-size: 40px;
+
+}
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 100%;
+  margin-right:auto;
+  margin-left:auto;
+  overflow: hidden;
+  transition: transform .2s;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px; 
+  padding: 5px;
+  object-fit: contain;
+  position: relative;
+}
+.gallery img:hover{
+  transform: scale(3);
+}
+h2 {
+  text-align:center;
+  font-family: 'Nanum Myeongjo', serif;
+  display:block;
+  font-size: 30px;
+  
+}
+
+h3 {
+  text-align:left;
+  font-family: 'Nanum Myeongjo', serif;
+  display:block;
+  font-weight:bold;
+  font-size: 30px;
+  
+  
+}
+.paragraf {
+  padding:20px;
+  display:block;
+}
+
+.paragrafduzi {
+  padding:20px;
+  display:block;
+}
+p {
+font-size: 20px;
+}
+
+li {
+font-size: 20px;
+}
+
+.container {
+  padding:15px;
+  border-radius:50px;
+  max-width:100%;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #987e4d;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color:rgba(34, 34, 34, 0.753);
+  color:white;
+  
+}
+
+input[type=submit] {
+  background-color: gray;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(34, 34, 34, 0.753); 
+  border: 1px solid #987e4d;
+  padding:20px 35px;
+  color: #987e4d;
+  border-radius:60px;
+  font-size:13px;
+  text-transform: uppercase;
+  letter-spacing:3px;
+  
+}
+
+input[type=submit]:hover {
+  border-color: white;
+  color: white;
+  cursor:pointer;
+}
+
+.container {
+  align-items:center;
+  margin-right:auto;
+  margin-left:auto;
+  text-align:center;
+}
+legend {
+  text-align:center;
+  display:block;
+  font-size:20px;
+  color: #987e4d;
+  font-weight:bold;
+}
+#ytvideo {
+  text-align:center;
+  background-color:#000000;;
+  padding-bottom:25px;
+  border: 2px solid #000; 
+}
+
+footer {
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+ 
+}
+
+#footer {
+  position: bottom;
+  bottom: 0px;
+  background-color: #0000005e;
+  width: 100%;
+  text-align: center;
+  margin-top:20px;
+  
+}
+.logo img {
+width:175px;
+max-width: 100%;
+height: auto;
+background-color: rgba(117, 93, 12, 0.5);
+padding: 10px;
+}
+.gal {
+width:500px;
+border: 3px solid #987e4d;; 
+}
+
+#footerimg {
+width:100%;
+}
+table {
+  align-items:center;
+  margin-right:auto;
+  margin-left:auto;
+  text-align:center;
+  margin-top:50px;
+  
+}
+th {
+  background-color:#987e4d;;
+  padding:10px;
+}
+
+td {
+  padding:10px;
+}
+
+td:hover{
+  background-color:#987e4d;
+}
+
+ul, ol {
+  margin-left:50px;
+}
